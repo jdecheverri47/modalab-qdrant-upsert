@@ -99,7 +99,7 @@ scheduler = BackgroundScheduler()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    scheduler.add_job(process_products, 'interval', hours=12)
+    scheduler.add_job(process_products, 'interval', hours=24)
     scheduler.start()
     logging.info("Scheduler started.")
     yield
