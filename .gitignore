@@ -1,0 +1,23 @@
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Entorno virtual
+venv/
+.venv/
+
+# Archivos de configuración de editores
+.vscode/
+.idea/
+
+# Archivos de log y otros temporales
+*.log
+*.tmp
+
+# Archivos generados de dependencias (si usas pipenv o poetry)
+pipenv.lock
+poetry.lock
+
+# Otros archivos sensibles o específicos del sistema
+.env

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+SQLAlchemy
+qdrant-client
+apscheduler
+python-dotenv
+transformers
+torch
+Pillow
+requests
+numpy
