@@ -95,12 +95,11 @@ def process_products():
         client.close()
         db.close()
 
-# Scheduler para ejecutar el job periódicamente (cada 10 minutos)
 scheduler = BackgroundScheduler()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    scheduler.add_job(process_products, 'interval', minutes=10)
+    scheduler.add_job(process_products, 'interval', hours=12)
     scheduler.start()
     logging.info("Scheduler iniciado.")
     yield
